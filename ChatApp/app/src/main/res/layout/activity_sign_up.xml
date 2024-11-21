@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/primaryVariant"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/login"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/edit_back"
+        android:padding="10dp"
+        android:hint="User name"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/edit_back"
+        android:padding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/pass"
+        android:background="@drawable/edit_back"/>
+
+    <TextView
+        android:id="@+id/SignUpTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textSize="24dp"
+        android:background="@drawable/button_back"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="60dp"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/loginTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:text="Hava account ? login"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

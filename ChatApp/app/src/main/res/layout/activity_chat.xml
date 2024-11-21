@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ece5dd"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:titleTextColor="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/sendMessage"
+        android:id="@+id/recycler"/>
+
+    <RelativeLayout
+        android:id="@+id/sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="write something...."
+            android:id="@+id/edit_msg"
+            android:padding="15dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/edit_back"/>
+        <ImageView
+            android:id="@+id/sendbtn"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/send"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
